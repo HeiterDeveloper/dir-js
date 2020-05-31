@@ -1,0 +1,121 @@
+/**
+*@author: Heiter Developer <dev@heiterdeveloper.com>
+*@link: https://github.com/HeiterDeveloper/dir-js
+*@copyright: 2020 Heiter Developer
+*@license: Apache License 2.0
+*@license: https://www.apache.org/licenses/LICENSE-2.0 Apache License 2.0
+**/
+.dir-js-background{
+  background-color:rgba(0,0,0,0.5);
+  width:100%;
+  height: 100%;
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index:10;
+}
+.dir-js-box{
+  width: 70%;
+  height: 80%;
+  background-color:#fff;
+  margin-top:5%;
+  margin-left:15%;
+  position:relative;
+}
+.dir-js-menu{
+  width: 100%;
+  height: 35px;
+  border-bottom:solid 1px #ccc;
+}
+.dir-js-new-dir,.dir-js-del-dir,.dir-js-back-dir,.dir-js-upl-dir,.dir-js-ren-dir{
+  width: 120px;
+  height: 35px;
+  text-align:center;
+  line-height: 35px;
+  background-repeat:no-repeat;
+  background-size: auto 80%;
+  background-position: 10px center;
+  background-color:#eee;
+  display:inline-block;
+  text-indent: 30px;
+  font-weight: bold;
+  font-size:0.8em;
+  cursor:pointer;
+}
+.dir-js-can-dir,.dir-js-sel-dir{
+  height:35px;
+  width: 110px;
+  border:none;
+  background:#ccc;
+  color:#555;
+}
+.dir-js-sel-dir{
+  float:right;
+  border-left:solid 1px #eee;
+}
+.dir-js-can-dir{
+  float:right;
+}
+.dir-js-box-resu{
+  width:100%;
+  max-height:100%;
+}
+.dir-js-del-dir,.dir-js-sel-dir,.dir-js-ren-dir{
+  display:none;
+}
+.dir-js-item{
+  width: 150px;
+  height: 200px;
+  /*border:solid 1px #000;*/
+  margin: 10px 10px;
+  display:inline-block;
+  background-size:auto 120px;
+  background-repeat:no-repeat;
+  background-position: center center;
+  position:relative;
+  cursor:pointer;
+  margin-bottom:30px;
+  box-sizing: border-box;
+}
+.dir-js-item span{
+  width: 100%;
+  height: 40px;
+  display:block;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  cursor:default !important;
+  font-size:0.8em;
+  font-weight:bold;
+  font-family:Verdana, Arial;
+  word-wrap: break-word;
+  text-align:center;
+}
+.area-click-cd{
+  width: 100%;
+  height: 130px;
+  display:block;
+}
+#fileUpload{
+  height: 0px;
+  width: 0px;
+  opacity:0;
+}
+.msgDirNull{
+  font-size:1.8em;
+  width:100%;
+  text-align:center;
+}
+.loadBar{
+  width:0px;
+  height:100%;
+  position:absolute;
+  top:0px;
+  left:0px;
+  background-color:rgba(0,0,0,0.7);
+  transition: 0.3s;
+  font-size:2em;
+  text-align:center;
+  line-height:100% !important;
+  color:#eee;
+}
