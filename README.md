@@ -1,6 +1,13 @@
 # dir-js
 File manager written in JS and PHP
 
+####  OBS: Update constants (DIRROOT, DIRFILES and DIRCACHE) in dir-js.php file.
+
+## Requisites:
+SimpleThumbPHP class (https://github.com/HeiterDeveloper/SimpleThumbPHP) to create thumbnails to image files.\
+Jquery
+## How to use:
+
 ```html
 <script src="jquery-3.5.1.min.js"></script>
 <link type="text/css" rel="stylesheet" href="dir-js.css">
