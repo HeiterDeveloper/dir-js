@@ -21,7 +21,6 @@ $p4 = $_FILES['arquivo'];
 
 function thumbArquivo($file){
   $typeFile = mime_content_type($file);
-  $thumb = '';
   if(preg_match("/image/", $typeFile)){
     $ext = pathinfo($file)['extension'];
     $nm = sha1($file);
